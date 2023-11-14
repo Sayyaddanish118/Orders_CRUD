@@ -76,7 +76,7 @@ module.exports.deleteController = async (req, res, next) => {
             return res.status(404).json({ error: 'Order not found' });
         }
 
-        res.json({ message: 'Order deleted successfully' });
+        res.json({ message: 'Order deleted successfully ' });
     } catch (error) {
         res.status(400).json({ error: error.message });
     }
